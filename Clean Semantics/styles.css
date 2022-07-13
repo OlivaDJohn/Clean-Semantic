@@ -9,18 +9,22 @@ header{
     background-color: green;
     height: 200px;
     width: 100%;
+    position: relative;
 }
 
 nav{
     background-color: lightblue;
     height: 100px;
     width: 50%;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    margin-right: 2rem;
 }
 
 article{
     background-color: orange;
     height: 500px;
-
 }
 
 figure{
