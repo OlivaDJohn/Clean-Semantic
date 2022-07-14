@@ -1,0 +1,6 @@
+<main> web page main content
+<section> Defines a certain section
+<article> Defines a bit of content which makes up an article
+<aside> Defines some content related to something
+<header>
+<footer>
