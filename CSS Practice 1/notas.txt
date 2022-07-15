@@ -1,0 +1,9 @@
+Positions
+    Absolute: Por sobre todo, pero statico. se queda en la posicion especificada, pero no se mueve con la pagina
+        Intentar evitar el uso de ABSOLUTE
+    Fixed: Por sobre todo, pero se mueve con la pagina, no es estatico
+    Relative: Si un Absolute esta en un div dentro de ella, hace el div absoluto moverse dentro del Fixed DIV
+
+Mientras mas especifica la etiqueta, mas importancia toma al renderizar (TAG => CLASS => ID)
+
+"!important" Hace que el valor que tenga esta etiqueta, tome la maxima importancia, pero es relativo al grado de importancia inicial (TAG => CLASS => ID)

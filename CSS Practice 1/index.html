@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <title>External vs Internal vs Inline CSS</title>
+</head>
+<body style="background-color: whitesmoke;">
+    <!--Inline takes the most importance in this case-->
+    <style>
+        body{
+           background-color:blue;
+           /*The Internal takes the second place of importance*/
+        }
+    </style>
+    <h1 id="title">Welcome!</h1>
+    <p class="body-text">Lorem ipsum dolor sit amet, <strong>consectetur</strong>  adipiscing elit. Duis id eros convallis, viverra lorem quis, 
+        sollicitudin lorem. Aenean lorem eros, pellentesque sed arcu vitae, rutrum vehicula magna. In vehicula 
+        dignissim risus, vitae sollicitudin elit convallis eget. Etiam dignissim fringilla sem eu placerat. 
+        Mauris dignissim massa semper, volutpat justo eget, efficitur nibh. Nullam eget lectus non turpis pulvinar 
+        vehicula. Sed vitae volutpat ex, at aliquet nibh. Donec pellentesque ultrices lacus, ac pulvinar sem commodo 
+        quis. Proin at lectus sed metus ultricies gravida. Cras et magna fringilla velit feugiat rhoncus at a lectus. 
+        Nullam sit amet placerat dui, a fringilla tellus. Morbi at lorem quis elit sagittis imperdiet in non mauris. 
+        Fusce et purus venenatis, maximus dui vel, laoreet eros. Donec pharetra augue neque, a posuere nisl molestie ut. 
+        Sed id pretium turpis, vel rhoncus elit. Quisque varius ipsum eu tellus aliquam, quis dignissim libero luctus.</p>
+        <p class="more-text">Some more <strong>down</strong> here...</p>
+        <br><br>
+        <input type="text">
+        <br><br>
+        <button type="button">Click me!</button>
+        <br><br>
+        <div id="outer">
+            <div id="inner">Inner</div>
+        </div>
+</body>
+</html>
