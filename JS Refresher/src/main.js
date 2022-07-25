@@ -606,4 +606,6 @@ testObj = {
 var playerNumber = 16;
 var player = testObj[playerNumber];
 
+myDog.name = "Yodeling";
+
 
