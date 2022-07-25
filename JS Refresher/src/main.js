@@ -49,3 +49,6 @@ console.log(product);
 
 var quotient = 66 / 33;
 console.log(quotient);
+
+var myVar;
+myVar++;
