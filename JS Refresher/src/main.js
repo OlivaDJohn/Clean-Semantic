@@ -178,3 +178,9 @@ function ourReusableFunction(){
 
 ourReusableFunction();
 
+function ourFuncWithArgs(a, b){
+    console.log(a-b);
+}
+
+ourFuncWithArgs(10,5);
+
