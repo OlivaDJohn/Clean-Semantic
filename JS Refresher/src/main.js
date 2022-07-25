@@ -149,3 +149,6 @@ console.log(myArray);
 
 myArray = [0,10,100,1000];
 var ourData = myArray[0];
+
+myArray[1] = 11;
+
