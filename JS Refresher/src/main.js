@@ -62,3 +62,6 @@ console.log(product1);
 
 var quotient1 = 4.4 / 2.0;
 
+var remainder = 11 % 3;
+
+
