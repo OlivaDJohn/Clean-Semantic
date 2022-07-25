@@ -294,3 +294,11 @@ function testNotEqual(val){
 
 console.log(testNotEqual(10));
 
+function testStrictInequality(val){
+    if (val !== 17){
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+console.log(testStrictInequality(10));
