@@ -126,4 +126,7 @@ myStr = "Jello World";
 This doesnt work cus strings ar immutable*/
 myStr = "Hello World";
 
+var findTheChar = myName;
+var thirdLetter = findTheChar[2];
+
 
