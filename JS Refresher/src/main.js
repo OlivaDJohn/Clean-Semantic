@@ -54,3 +54,6 @@ var myVar = 11;
 myVar++;
 
 myVar--;
+
+var myDecimal = 0.009;
+
