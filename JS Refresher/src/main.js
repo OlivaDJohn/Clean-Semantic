@@ -585,3 +585,6 @@ var myDog = {
     "friends": ["everything!"]
 };
 
+var nameValue = myDog.name;
+var legsValue = myDog.legs;
+
