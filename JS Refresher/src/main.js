@@ -111,3 +111,8 @@ myStr += "I came second";
 
 myName = "Jonathan";
 myStr = "Hello, my name is " + myName + ", how are you?"
+
+var anAdjective = "weird!";
+var ourStr = "JavaScript is ";
+ourStr += anAdjective;
+
