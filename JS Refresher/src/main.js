@@ -129,4 +129,6 @@ myStr = "Hello World";
 var findTheChar = myName;
 var thirdLetter = findTheChar[2];
 
+var lastLetter = findTheChar[findTheChar.length - 1];
+
 
