@@ -131,4 +131,6 @@ var thirdLetter = findTheChar[2];
 
 var lastLetter = findTheChar[findTheChar.length - 1];
 
+var thirdToLast = findTheChar[findTheChar.length - 3];
+
 
