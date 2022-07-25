@@ -339,3 +339,15 @@ function testLesserThan(val){
 
 console.log(testLesserThan(10));
 
+function testLessOrEqual(val){
+    if (val <= 12){
+        return "Smaller than or equal to 12";
+    }
+    if (val <= 24){
+        return "Smaller than or equal to 24";
+    }
+    return "More than 24";
+}
+
+console.log(testLessOrEqual(10));
+
