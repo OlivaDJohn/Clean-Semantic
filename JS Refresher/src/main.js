@@ -202,3 +202,12 @@ function fun2(){
 
 fun1();
 fun2();
+
+function myLocalScope(){
+    let newVar = 8;
+    console.log(newVar);
+}
+
+myLocalScope();
+console.log(newVar);
+
