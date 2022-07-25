@@ -285,3 +285,12 @@ function compareEquality(a,b){
 
 console.log(compareEquality(10, "10"));
 
+function testNotEqual(val){
+    if (val != 99){
+        return "Not Equal";
+    }
+    return "Equal";
+}
+
+console.log(testNotEqual(10));
+
