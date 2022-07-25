@@ -577,3 +577,11 @@ function cc(card){
 
 cc(2); cc(3); cc(7); cc('K'); cc('A');
 console.log(cc(4));
+
+var myDog = {
+    "name": "Camper",
+    "legs": 4,
+    "tails": 1,
+    "friends": ["everything!"]
+};
+
