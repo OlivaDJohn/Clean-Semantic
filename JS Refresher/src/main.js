@@ -43,3 +43,6 @@ console.log(sum);
 
 var diff = 45 - 33;
 console.log(diff);
+
+var product = 8 * 10;
+console.log(product);
