@@ -171,3 +171,10 @@ myArray.unshift("Jonathan");
 console.log(myArray);
 
 var myList = [["cereal",3],["milk",2],["bananas",3],["juice",2]];
+
+function ourReusableFunction(){
+    console.log("Heyya, World");
+}
+
+ourReusableFunction();
+
