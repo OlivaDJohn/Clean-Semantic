@@ -258,3 +258,11 @@ function ourTrueOrFalse(isItTrue){
 
 console.log(ourTrueOrFalse(true));
 
+function testEqual(val) {
+    if (val == 12){
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testEqual(10));
