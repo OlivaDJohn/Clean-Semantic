@@ -60,4 +60,5 @@ var myDecimal = 0.009;
 var product1 = 2.0 * 2.5;
 console.log(product1);
 
+var quotient1 = 4.4 / 2.0;
 
