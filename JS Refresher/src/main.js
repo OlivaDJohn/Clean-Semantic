@@ -608,4 +608,5 @@ var player = testObj[playerNumber];
 
 myDog.name = "Yodeling";
 
+myDog.bark = "Bow-wow";
 
