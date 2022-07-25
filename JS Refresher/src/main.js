@@ -485,7 +485,7 @@ function switchOfStuff(val){
 console.log(switchOfStuff(5));
 
 function sequentialSizes(val){
-    answer = "";
+    let answer = "";
     switch(val){
         case 1:
         case 2:
@@ -503,6 +503,32 @@ function sequentialSizes(val){
             answer = "High";
             break;
     }
+    return answer;
 }
 console.log(sequentialSizes(5));
+
+function chainToSwitch(val){
+    let answer = "";
+    switch(val){
+        case "bob":
+            answer = "Marley";
+            break;
+        case 42:
+            answer = "The Answer";
+            break;
+        case 1:
+            answer = "There is no #1";
+            break;
+        case 99:
+            answer = "Missed me by this much";
+            break;
+        case 7:
+            answer = "Ate Nine";
+            break;
+        default:
+            answer = "Stuff";
+            break;
+    }
+    return answer;
+}
 
