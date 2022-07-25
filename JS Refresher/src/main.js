@@ -109,3 +109,5 @@ myStr = "I come first. " + "I come second.";
 myStr = "IT came first. ";
 myStr += "I came second";
 
+myName = "Jonathan";
+myStr = "Hello, my name is " + myName + ", how are you?"
