@@ -209,5 +209,15 @@ function myLocalScope(){
 }
 
 myLocalScope();
-console.log(newVar);
+//console.log(newVar);
+
+var outerWearer = "T-shirt";
+
+function myOutfit(){
+    outerWearer = "sweater";
+    return outerWearer;
+}
+
+console.log(myOutfit());
+console.log(outerWearer);
 
