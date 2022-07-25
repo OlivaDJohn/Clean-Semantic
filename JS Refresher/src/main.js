@@ -133,4 +133,10 @@ var lastLetter = findTheChar[findTheChar.length - 1];
 
 var thirdToLast = findTheChar[findTheChar.length - 3];
 
+function wordBlanks(myNoun, myAdjective, myVerb, myAdverb){
+    let result = "";
+    result += "The " + myAdjective +" "+ myNoun +" "+ myVerb + " to the store " + myAdverb;
+    return result;
+}
 
+console.log(wordBlanks("dog","big","ran","quickly"));
