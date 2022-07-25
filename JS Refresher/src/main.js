@@ -120,3 +120,10 @@ myName = "Parangaricutirimicuaro";
 var myNameLength = myName.length;
 
 var firstLetterOfName = myName[0];
+
+myStr = "Jello World";
+/* myStr[0] = H
+This doesnt work cus strings ar immutable*/
+myStr = "Hello World";
+
+
