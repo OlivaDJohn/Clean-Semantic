@@ -369,3 +369,15 @@ function testLogicalOr(val){
 
 console.log(testLogicalOr(15));
 
+function testElse(val){
+    let results = "";
+    
+    if (val > 5){
+       results = "Bigger than 5";
+    } else {
+        results = "5 or Smaller";
+    }
+    return results;
+}
+
+testElse(4);
