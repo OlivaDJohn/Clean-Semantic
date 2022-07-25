@@ -81,3 +81,6 @@ a /= 12;
 b /= 4;
 c /= 11;
 
+var firstName = "Jonathan";
+var lastName = "Oliva";
+
