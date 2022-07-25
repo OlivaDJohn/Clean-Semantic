@@ -143,3 +143,6 @@ console.log(wordBlanks("dog","big","ran","quickly"));
 
 var myArray = ["John",20];
 
+myArray = [["the universe",42],["everything",101010]];
+
+console.log(myArray);
