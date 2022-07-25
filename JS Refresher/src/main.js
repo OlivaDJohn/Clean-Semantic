@@ -30,3 +30,10 @@ a1 = a1 + 1;
 b1 = b2 + 5;
 c1 = c1 + "String!";
 
+var studylyCapVar;
+var properCamelCase;
+var titleCaseOver;
+
+studylyCapVar = 10;
+properCamelCase = "A String!"
+titleCaseOver = 9000;
