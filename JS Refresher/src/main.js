@@ -21,3 +21,12 @@ a = 7;
 b = a;
 
 console.log(a);
+
+var a1 = 5;
+var b1 = 10;
+var c1 = "I am a";
+
+a1 = a1 + 1;
+b1 = b2 + 5;
+c1 = c1 + "String!";
+
