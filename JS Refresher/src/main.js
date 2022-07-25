@@ -164,3 +164,5 @@ console.log(myArray);
 myArray.pop();
 console.log(myArray);
 
+myArray.shift();
+console.log(myArray);
