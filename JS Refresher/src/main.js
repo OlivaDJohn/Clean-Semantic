@@ -119,3 +119,4 @@ ourStr += anAdjective;
 myName = "Parangaricutirimicuaro";
 var myNameLength = myName.length;
 
+var firstLetterOfName = myName[0];
