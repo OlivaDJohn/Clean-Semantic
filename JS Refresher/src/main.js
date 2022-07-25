@@ -106,3 +106,6 @@ console.log(myStr);
 
 myStr = "I come first. " + "I come second.";
 
+myStr = "IT came first. ";
+myStr += "I came second";
+
