@@ -245,3 +245,7 @@ console.log("Before: " + JSON.stringify(testArray));
 console.log(nextInLine(testArray, 6));
 console.log("After: " + JSON.stringify(testArray));
 
+function welcomeToBooleans(){
+    return true;
+}
+
