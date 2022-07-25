@@ -266,3 +266,12 @@ function testEqual(val) {
 }
 
 console.log(testEqual(10));
+
+function testStrict(val){
+    if (val === 7){
+        return "Equal";
+    }
+    return "Not Equal";
+}
+
+console.log(testStrict(10));
