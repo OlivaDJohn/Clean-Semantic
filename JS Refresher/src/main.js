@@ -233,3 +233,15 @@ function change(num){
 }
 
 changed = change(10);
+
+function nextInLine(arr, item){
+    arr.push(item);
+    return item;
+}
+
+var testArray = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArray));
+console.log(nextInLine(testArray, 6));
+console.log("After: " + JSON.stringify(testArray));
+
