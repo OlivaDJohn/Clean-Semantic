@@ -64,4 +64,7 @@ var quotient1 = 4.4 / 2.0;
 
 var remainder = 11 % 3;
 
-
+a += 12;
+b += 9;
+var c = 12;
+c += 7;
