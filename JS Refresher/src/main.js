@@ -160,3 +160,7 @@ myArray = ["Stimptson","J","cat"];
 myArray.push(["happy","joy"]);
 
 console.log(myArray);
+
+myArray.pop();
+console.log(myArray);
+
