@@ -221,3 +221,8 @@ function myOutfit(){
 console.log(myOutfit());
 console.log(outerWearer);
 
+function minusSeven(num){
+    return num - 7;
+}
+console.log(minusSeven(10));
+
