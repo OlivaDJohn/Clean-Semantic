@@ -27,7 +27,7 @@ var b1 = 10;
 var c1 = "I am a";
 
 a1 = a1 + 1;
-b1 = b2 + 5;
+b1 = b1 + 5;
 c1 = c1 + "String!";
 
 var studylyCapVar;
@@ -88,3 +88,19 @@ var myStr = "I am a \"double quoted\" string inside \"double quotes\"";
 console.log(myStr);
 
 myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
+
+/*****
+ CODE OUTPUT
+ \' single quote
+ \" double quote
+ \\ backslash
+ \n new line
+ \r carriage return
+ \t tab
+ \b backspace
+ \f form feed
+ *****/
+
+myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+console.log(myStr);
+
