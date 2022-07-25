@@ -249,3 +249,12 @@ function welcomeToBooleans(){
     return true;
 }
 
+function ourTrueOrFalse(isItTrue){
+    if (isItTrue){
+        return "Yes, its true";
+    }
+    return "No, its false";
+}
+
+console.log(ourTrueOrFalse(true));
+
