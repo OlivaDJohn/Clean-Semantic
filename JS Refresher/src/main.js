@@ -403,3 +403,20 @@ function orderMyLogic(val){
 }
 
 console.log(orderMyLogic(3));
+
+function testSize(val){
+    if (val >= 20){
+        return "Huge";
+    } else if(val < 20){
+        return "Large";
+    } else if(val < 15){
+        return "Medium";
+    } else if(val < 10){
+        return "Small";
+    }else if (val < 5){
+        return "Tiny";
+    }
+}
+
+console.log(testSize(3));
+
