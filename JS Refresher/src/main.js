@@ -116,3 +116,6 @@ var anAdjective = "weird!";
 var ourStr = "JavaScript is ";
 ourStr += anAdjective;
 
+myName = "Parangaricutirimicuaro";
+var myNameLength = myName.length;
+
