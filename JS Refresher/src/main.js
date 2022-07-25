@@ -46,3 +46,6 @@ console.log(diff);
 
 var product = 8 * 10;
 console.log(product);
+
+var quotient = 66 / 33;
+console.log(quotient);
