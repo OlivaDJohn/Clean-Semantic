@@ -104,3 +104,5 @@ myStr = '<a href="http://www.example.com" target="_blank">Link</a>';
 myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
 console.log(myStr);
 
+myStr = "I come first. " + "I come second.";
+
