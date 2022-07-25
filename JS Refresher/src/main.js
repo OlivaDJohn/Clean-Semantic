@@ -146,3 +146,6 @@ var myArray = ["John",20];
 myArray = [["the universe",42],["everything",101010]];
 
 console.log(myArray);
+
+myArray = [0,10,100,1000];
+var ourData = myArray[0];
