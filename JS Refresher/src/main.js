@@ -698,3 +698,24 @@ var myStorag = {
 
 var gloveBoxContents = myStorag.car.inside["glove box"];
 console.log(gloveBoxContents);
+
+var myPlants = [
+    {
+        type:"Flowers",
+        list:[
+            "rose",
+            "tulip",
+            "dandelion"
+        ]
+    },
+    {
+        type:"trees",
+        list:[
+            "fir",
+            "pine",
+            "birch"
+        ]
+    }
+];
+
+var secondTree = myPlants[1].list[1];
