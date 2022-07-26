@@ -1062,3 +1062,28 @@ const half = (function(){
         return (max + min) / 2.0;
     };
 });
+
+const person = {
+    name:"Zodiac Hasbro",
+    age:56
+};
+
+const greetings = `Hello, my name is ${person.name}!
+I am ${person.age} years old.`;
+
+const result = {
+    success: ["max-lenght","no-amd","prefer-arrow-funtions"],
+    failure: ["no-var","var-on-top","linebreak"],
+    skipped: ["id-blacklist","no-dup-keys"]
+};
+
+function makeList(arr){
+    const resultDisplayArray = [];
+
+    for (let i = 0; i < arr.length; i++){
+        resultDisplayArray.push(`<li class = "text-warning">${arr[i]}</li>`);
+    }
+    return resultDisplayArray;
+}
+
+const resultDisplayArray = makeList(result.failure);
