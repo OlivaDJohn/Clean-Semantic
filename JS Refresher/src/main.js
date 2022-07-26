@@ -895,3 +895,6 @@ function convertToInteger2(str){
 
 console.log(convertToInteger2("10011"));
 
+function checkEqual(a,b){
+    return a===b ? true:false;
+}
