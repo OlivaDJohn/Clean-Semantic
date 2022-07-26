@@ -985,3 +985,9 @@ const squareList = (arr) => {
 };
 
 const squaredIntegers = squareList(realNumerArray);
+
+const increment = (function() {
+    return function increment(number, value = 1){
+        return number + value;
+    };
+});
