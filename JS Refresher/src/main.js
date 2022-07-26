@@ -882,3 +882,9 @@ function ourRandomRange(ourMin, ourMax){
 }
 
 console.log(ourRandomRange(1,9));
+
+function convertToInteger(str){
+    return parseInt(str);
+}
+
+console.log(convertToInteger("55"));
