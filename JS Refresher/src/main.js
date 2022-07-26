@@ -790,3 +790,12 @@ for (let i = 10; i > 0; i-=2){
     ourArray.push(i);
 }
 
+var ourArray = [9,10,11,12];
+var ourTotal = 0;
+
+for (let i = 0; i < ourArray.length; i++){
+    ourTotal += ourArray[i];
+}
+
+console.log(ourTotal);
+
