@@ -777,3 +777,9 @@ var ourArray = [];
 for (let i = 0; i < 5; i++){
     ourArray.push(i);
 }
+
+var ourArray = [];
+
+for (let i = 0; i < 10; i+=2){
+    ourArray.push(i);
+}
