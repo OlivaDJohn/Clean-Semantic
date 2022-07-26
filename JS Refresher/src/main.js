@@ -683,3 +683,18 @@ var myMusic = [
         ]
     }
 ]
+
+var myStorag = {
+    "car":{
+        "inside":{
+            "glove box":"maps",
+            "passenger seat":"crumbs"
+        },
+        "outside":{
+            "trunk":"jack"
+        }
+    }
+};
+
+var gloveBoxContents = myStorag.car.inside["glove box"];
+console.log(gloveBoxContents);
