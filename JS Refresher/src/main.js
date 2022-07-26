@@ -646,5 +646,18 @@ function phoneticLookup(val){
     return result;
 }
 
+var myObj = {
+    gift:"pony",
+    pet: "kitten",
+    bed:"sleight"
+}
 console.log(phoneticLookup("charlie"));
 
+function checkObject(checkProp){
+    if(myObj.hasOwnProperty(checkProp)){
+        return myObj[checkProp];
+    }
+    return "Not Found";
+}
+
+console.log(checkObject("gift"));
