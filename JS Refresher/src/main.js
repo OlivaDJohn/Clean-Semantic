@@ -1004,3 +1004,19 @@ let arr2;
     arr2 = [...arr1];
     arr1[0] = 'potato'
 })();
+
+var voxel = {x: 3.6, y: 7.4, z: 6.54};
+
+const {x:a, y:b, z:c} = voxel;
+
+const AVG_TEMPERATURES = {
+    today: 77.5,
+    tomorrow: 79
+};
+
+function getTempOfTmrw(abgTemperatures){
+    "use strict";
+
+    const {tomorrow: tempOfTomorrow} = abgTemperatures;
+    return tempOfTomorrow;
+}
