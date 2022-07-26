@@ -888,3 +888,10 @@ function convertToInteger(str){
 }
 
 console.log(convertToInteger("55"));
+
+function convertToInteger2(str){
+    return parseInt(str,2);
+}
+
+console.log(convertToInteger2("10011"));
+
