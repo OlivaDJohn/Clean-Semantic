@@ -1097,3 +1097,23 @@ const bicycle = {
         this.gear = newGear;
     }
 }
+
+class SpaceShuttle{
+    constructor(targetPlanet){
+        this.targetPlanet = targetPlanet;
+    }
+}
+
+var zeus = new SpaceShuttle('Jupiter');
+
+function makeClass(){
+    class Vegetable{
+        constructor(name){
+            this.name = name;
+        }
+    }
+    return Vegetable
+}
+
+const Vegetable = makeClass();
+const carrot = new Vegetable('carrot');
