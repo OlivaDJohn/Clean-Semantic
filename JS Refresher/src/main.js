@@ -761,3 +761,13 @@ function updateRecords(id, prop, value){
 }
 
 console.log(updateRecords(5439,"artist","ABBA"));
+
+var myArray = [];
+
+var i = 0;
+while (i < 5){
+    myArray.push(i);
+    i++;
+}
+
+console.log(myArray);
