@@ -1089,3 +1089,11 @@ function makeList(arr){
 const resultDisplayArray = makeList(result.failure);
 
 const createPerson = (name,age,gender) => ({name, age, gender});
+
+const bicycle = {
+    gear:2,
+    setGear(newGear){
+        "use strict";
+        this.gear = newGear;
+    }
+}
