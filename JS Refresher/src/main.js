@@ -1117,3 +1117,39 @@ function makeClass(){
 
 const Vegetable = makeClass();
 const carrot = new Vegetable('carrot');
+
+class Book { 
+    constructor(author){
+        this._author = author;
+    }
+
+    get writer(){
+        return this._author;
+    }
+
+    set writer(updateAuthor){
+        this._author = updateAuthor;
+    }
+}
+
+function makeClass1(){
+    class Thermostat {
+        constructor(temp){
+            this._temp = 5/9 * (temp-32);
+        }
+
+        get temperature(){
+            return this._temp;
+        }
+
+        set temperature(newTemp){
+            this._temp = newTemp;
+        }
+    }
+}
+
+const Thermostat = makeClass1();
+const thermos = new Thermostat(76);
+let temp = thermos.temperature;
+thermos.temperature = 26;
+temp = thermos.temperature;
