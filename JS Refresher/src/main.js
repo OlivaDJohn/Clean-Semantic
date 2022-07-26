@@ -610,3 +610,4 @@ myDog.name = "Yodeling";
 
 myDog.bark = "Bow-wow";
 
+delete myDog.bark;
