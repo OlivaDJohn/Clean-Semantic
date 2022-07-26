@@ -868,3 +868,11 @@ function randomFraction(){
 }
 
 console.log(randomFraction());
+
+var randomNum = Math.floor(Math.random()*20);
+
+function randomWholeNum(){
+    return Math.floor(Math.random()*10);
+}
+
+console.log(randomWholeNum());
