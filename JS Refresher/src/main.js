@@ -972,3 +972,5 @@ function freezeObj(){
 }
 
 const PI = freezeObj();
+
+const magic = () =>  new Date();
