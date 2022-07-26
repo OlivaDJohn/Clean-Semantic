@@ -1088,10 +1088,4 @@ function makeList(arr){
 
 const resultDisplayArray = makeList(result.failure);
 
-const createPerson = (name,age,gender) => {
-    return {
-        name:name,
-        age:age,
-        gender:gender
-    }
-}
+const createPerson = (name,age,gender) => ({name, age, gender});
