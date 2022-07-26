@@ -862,3 +862,9 @@ function lookupProfile(name,prop){
 
 var data = lookupProfile("Akira","likes");
 console.log(data);
+
+function randomFraction(){
+    return Math.random();
+}
+
+console.log(randomFraction());
