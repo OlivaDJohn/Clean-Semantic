@@ -898,3 +898,5 @@ console.log(convertToInteger2("10011"));
 function checkEqual(a,b){
     return a===b ? true:false;
 }
+
+console.log(checkEqual(1,2))
