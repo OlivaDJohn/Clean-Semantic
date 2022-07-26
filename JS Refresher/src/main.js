@@ -906,3 +906,17 @@ function checkSign(num){
 }
 
 console.log(checkSign(-10));
+
+let catName = "Quincy";
+let quotes;
+
+catName = "Beau";
+
+function catTalk(){
+    "use strict";
+
+    catName = "Oliver";
+    quotes = catName + "says Meow!";
+}
+
+catTalk();
