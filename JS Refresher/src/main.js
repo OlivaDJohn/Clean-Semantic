@@ -974,3 +974,5 @@ function freezeObj(){
 const PI = freezeObj();
 
 const magic = () =>  new Date();
+
+var myConcat = (arr1, arr2) => arr1.concat(arr2);
