@@ -68,75 +68,78 @@ link.addEventListener('click', (e) =>{
     console.log(`Navigation to ${e.target.textContent} was prevented`);
 })*/
 
-const list = document.querySelector('#book-list ul');
+document.addEventListener('DOMContentLoaded', () => {
+    const list = document.querySelector('#book-list ul');
 
-list.addEventListener('click', e =>{
-    if(e.target.className == 'delete'){
-        const li = e.target.parentElement;
-        list.removeChild(li);
-    }
-})
-
-const addForm = document.forms['add-book'];
-
-addForm.addEventListener('submit', e =>{
-    e.preventDefault();
-
-    const value = addForm.querySelector('input[type="text"]').value;
-    
-    const li = document.createElement('li');
-    const bookName = document.createElement('span');
-    const deleteBtn = document.createElement('span');
-
-    deleteBtn.textContent = 'delete';
-    deleteBtn.classList.add('delete');
-    bookName.textContent = value;
-    bookName.classList.add('name');
-
-    li.appendChild(bookName);
-    li.appendChild(deleteBtn);
-    list.appendChild(li);
-})
-
-const hideBox = document.querySelector('#hide');
-
-hideBox.addEventListener('change', e=>{
-    if(hideBox.checked){
-        list.style.display = "none";
-    } else{
-        list.style.display = "initial";
-    }
-})
-
-const searchBar = document.forms['search-books'].querySelector('input');
-
-searchBar.addEventListener('keyup', e =>{
-    const term = e.target.value.toLowerCase();
-    const books = list.getElementsByTagName('li');
-    Array.from(books).forEach(element => {
-        const title = element.firstElementChild.textContent;
-        if(title.toLowerCase().indexOf(term) != -1){
-            element.style.display = 'block';
-        } else {
-            element.style.display = 'none';
+    list.addEventListener('click', e =>{
+        if(e.target.className == 'delete'){
+            const li = e.target.parentElement;
+            list.removeChild(li);
         }
-    });
+    })
 
-})
+    const addForm = document.forms['add-book'];
 
-const tabs = document.querySelector('.tabs');
-const panels = document.querySelectorAll('.panel');
+    addForm.addEventListener('submit', e =>{
+        e.preventDefault();
 
-tabs.addEventListener('click', e=>{
-    if(e.target.tagName == 'LI'){
-        const targetPanel = document.querySelector(e.target.dataset.target);
-        panels.forEach(element => {
-            element.classList.toggle('active');
-            /*if(element == targetPanel){
-                element.classList.add('active')
+        const value = addForm.querySelector('input[type="text"]').value;
+        
+        const li = document.createElement('li');
+        const bookName = document.createElement('span');
+        const deleteBtn = document.createElement('span');
+
+        deleteBtn.textContent = 'delete';
+        deleteBtn.classList.add('delete');
+        bookName.textContent = value;
+        bookName.classList.add('name');
+
+        li.appendChild(bookName);
+        li.appendChild(deleteBtn);
+        list.appendChild(li);
+    })
+
+    const hideBox = document.querySelector('#hide');
+
+    hideBox.addEventListener('change', e=>{
+        if(hideBox.checked){
+            list.style.display = "none";
+        } else{
+            list.style.display = "initial";
+        }
+    })
+
+    const searchBar = document.forms['search-books'].querySelector('input');
+
+    searchBar.addEventListener('keyup', e =>{
+        const term = e.target.value.toLowerCase();
+        const books = list.getElementsByTagName('li');
+        Array.from(books).forEach(element => {
+            const title = element.firstElementChild.textContent;
+            if(title.toLowerCase().indexOf(term) != -1){
+                element.style.display = 'block';
             } else {
-                element.classList.remove('active')
-            }*/
+                element.style.display = 'none';
+            }
         });
-    }
+
+    })
+
+    const tabs = document.querySelector('.tabs');
+    const panels = document.querySelectorAll('.panel');
+
+    tabs.addEventListener('click', e=>{
+        if(e.target.tagName == 'LI'){
+            const targetPanel = document.querySelector(e.target.dataset.target);
+            panels.forEach(element => {
+                element.classList.toggle('active');
+                /*if(element == targetPanel){
+                    element.classList.add('active')
+                } else {
+                    element.classList.remove('active')
+                }*/
+            });
+        }
+    })
 })
+
