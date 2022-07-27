@@ -14,3 +14,5 @@ export const foo = "bar";
 export const bar = "foo";
 
 import * as capitalizeString from "./string_function";
+
+import susbtract from "./string_function";
