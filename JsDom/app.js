@@ -18,7 +18,7 @@ books.forEach(item => {
 
 const bookList = document.querySelector('#book-list');
 //bookList.innerHTML = '<h2>Books and more...</h2>';
-bookList.innerHTML += "<p>This is how you add HTML</p>"*/
+bookList.innerHTML += "<p>This is how you add HTML</p>"
 
 const banner = document.querySelector('#page-banner');
 
@@ -27,4 +27,11 @@ console.log(`#page-banner node name is: ${banner.nodeName}`);
 console.log(`#page-banner has child nodes: ${banner.hasChildNodes()}`);
 
 const clonedBanner = banner.cloneNode(true);
-console.log(clonedBanner.outerHTML);
+console.log(clonedBanner.outerHTML);*/
+
+const bookList = document.querySelector('#book-list');
+
+console.log(`The parent node is: ${bookList.parentNode}`);
+console.log(`The parent node is: ${bookList.parentElement.parentElement}`);
+
+console.log(bookList.children);
