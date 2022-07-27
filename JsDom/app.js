@@ -42,7 +42,7 @@ console.log(`#book-list next element sibling is: ${bookList.nextElementSibling}`
 console.log(`#book-list previous sibling is: ${bookList.previousSibling}`);
 console.log(`#book-list previous element sibling is: ${bookList.previousElementSibling}`);
 
-bookList.previousElementSibling.querySelector('p').innerHTML += '<br>Too cool for everyone else'*/
+bookList.previousElementSibling.querySelector('p').innerHTML += '<br>Too cool for everyone else'
 
 const h2 = document.querySelector("#book-list h2");
 
@@ -66,4 +66,13 @@ const link = document.querySelector('#page-banner a');
 link.addEventListener('click', (e) =>{
     e.preventDefault();
     console.log(`Navigation to ${e.target.textContent} was prevented`);
+})*/
+
+const list = document.querySelector('#book-list ul');
+
+list.addEventListener('click', e =>{
+    if(e.target.className == 'delete'){
+        const li = e.target.parentElement;
+        list.removeChild(li);
+    }
 })
