@@ -123,3 +123,20 @@ searchBar.addEventListener('keyup', e =>{
     });
 
 })
+
+const tabs = document.querySelector('.tabs');
+const panels = document.querySelectorAll('.panel');
+
+tabs.addEventListener('click', e=>{
+    if(e.target.tagName == 'LI'){
+        const targetPanel = document.querySelector(e.target.dataset.target);
+        panels.forEach(element => {
+            element.classList.toggle('active');
+            /*if(element == targetPanel){
+                element.classList.add('active')
+            } else {
+                element.classList.remove('active')
+            }*/
+        });
+    }
+})
