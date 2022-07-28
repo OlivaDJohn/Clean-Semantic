@@ -1,5 +1,6 @@
 import { Observable, interval, fromEvent, forkJoin, of, from } from "rxjs";
-import { bufferTime, switchMap, delay, take,concatMap } from "rxjs/operators";
+import { bufferTime, switchMap, delay, take,concatMap, mergeMap } from "rxjs/operators";
+import { ajax } from "rxjs/ajax";
 
 
 const myObs = new Observable((Observer) => {
@@ -35,10 +36,16 @@ const subs1 = buffer.subscribe(val => {
 
 //fork.subscribe(val => console.log(val));
 
-const source = of(2000, 1000, 3000);
-
-const obsConcatMap = source.pipe(
-    concatMap(v => of(`Valor: ${v}`)).pipe(delay(v))
+const source = of(
+    ajax.getJSON('https://api.github.com/users/ctmil'),
+    ajax.getJSON('https://api.github.com/users/ibuioli')
 );
 
-obsConcatMap.subscribe(v = console.log(v));
+const obsMergeMap = source.pipe(
+    mergeMap(v => v)
+);
+
+obsMergeMap.subscribe(
+    v => console.log(v)
+);
+
