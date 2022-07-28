@@ -11,6 +11,8 @@ const obs = new Observable((Observer) => {
     }, 1000 );
 })
 
+const contador = new timer(1000);
+
 console.log('Just before subscribe');
 obs.subscribe({
     next: x => console.log("got value " + x),
@@ -18,3 +20,8 @@ obs.subscribe({
     complete: () => console.log('done')
 });
 console.log('Just after susbcribe');
+
+contador.subscribe((n) => {
+    //console.log(`Cada ${n} segundos`);
+    console.log(`TRIGGERED`);
+})
