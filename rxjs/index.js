@@ -1,6 +1,7 @@
-import { Observable, pipe, of } from "rxjs";
+import { Observable, pipe, of, fromEvent } from "rxjs";
 //import { fromEvent } from "rxjs";
-import {map, filter} from "rxjs/operators"
+import {map, filter, tap} from "rxjs/operators"
+
 /*import {interval, timer} from "rxjs";
 
 const obs = new Observable((Observer) => {
@@ -46,3 +47,13 @@ const alCuadrado = pipe(
 const cuadrado = alCuadrado(nums);
 
 cuadrado.subscribe(x => console.log(x));
+
+const clicks = fromEvent(document, 'click');
+
+const positions = clicks.pipe(
+    tap(ev => console.log('Procesado: ' + ev),
+    err => console.log(err)),
+    () => console.log('Completado')
+);
+
+positions.subscribe(pos => console.log(pos));
