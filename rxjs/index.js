@@ -1,5 +1,6 @@
-import { Observable } from "rxjs";
-import { fromEvent } from "rxjs";
+import { Observable, pipe, of } from "rxjs";
+//import { fromEvent } from "rxjs";
+import {map, filter} from "rxjs/operators"
 /*import {interval, timer} from "rxjs";
 
 const obs = new Observable((Observer) => {
@@ -27,10 +28,21 @@ contador.subscribe((n) => {
     console.log(`TRIGGERED`);
 })*/
 
-const el = document.getElementById('elemento');
+/*const el = document.getElementById('elemento');
 
 const mouseMove = fromEvent(el, 'mousemove');
 
 mouseMove.subscribe((e) => {
     console.log(`Coordenadas: X=${e.clientX}, Y=${e.clientY}`);
-});
+});*/
+
+const nums = of(1,2,3,4,5);
+
+const alCuadrado = pipe(
+    filter((n) => n % 2 === 0),
+    map(n => n*n)
+);
+
+const cuadrado = alCuadrado(nums);
+
+cuadrado.subscribe(x => console.log(x));
