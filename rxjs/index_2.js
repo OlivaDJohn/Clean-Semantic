@@ -1,5 +1,5 @@
-import { Observable, interval } from "rxjs";
-import { bufferTime } from "rxjs/operators";
+import { Observable, interval, fromEvent, from } from "rxjs";
+import { bufferTime, switchMap } from "rxjs/operators";
 
 
 const myObs = new Observable((Observer) => {
@@ -24,3 +24,5 @@ const buffer = timer.pipe(bufferTime(2000, 1000));
 const subs1 = buffer.subscribe(val => {
     console.log('buffer:',val);
 });
+
+fromEvent(document, 'click').pipe(switchMap(() => interval(1000))).subscribe(console.log);
