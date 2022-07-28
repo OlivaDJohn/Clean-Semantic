@@ -1,8 +1,10 @@
 import { Observable, pipe, of } from "rxjs";
+import { concat, interval, range } from 'rxjs';
 //import { fromEvent } from "rxjs";
-import {map, filter} from "rxjs/operators";
-import { timer } from "rxjs";
-import {tap, mapTo, share} from "rxjs/operators";
+import {map, filter, take} from "rxjs/operators";
+
+/*import { timer } from "rxjs";
+import {tap, mapTo, share} from "rxjs/operators";*/
 
 /*import {interval, timer} from "rxjs";
 
@@ -60,7 +62,8 @@ const positions = clicks.pipe(
 
 positions.subscribe(pos => console.log(pos));*/
 
-const time = timer(1000);
+/*const time = timer(1000);
+
 
 const obs = time.pipe(
     tap(() => console.log('TAP ON')),
@@ -75,4 +78,12 @@ const shareObs = obs.pipe(share());
 console.log('SHARE ON');
 
 const subs03 = shareObs.subscribe(val => console.log(val));
-const subs04 = shareObs.subscribe(val => console.log(val));
+const subs04 = shareObs.subscribe(val => console.log(val));*/
+
+const timer = interval(1000).pipe(take(4));
+
+const rango = range(1,10);
+
+const result = concat(timer, rango);
+
+result.subscribe(x => console.log(x));
