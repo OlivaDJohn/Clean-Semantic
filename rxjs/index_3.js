@@ -1,4 +1,4 @@
-import { of, Subject, from, ConnectableObservable, ReplaySubject } from "rxjs";
+import { of, Subject, from, ConnectableObservable, ReplaySubject, BehaviorSubject } from "rxjs";
 import {scan, delay, multicast} from "rxjs/operators";
 
 const src = of(1,2,3,4,5).pipe(delay(1000));
@@ -45,3 +45,11 @@ obs.next(4);
 obs.next(5);
 
 obs.subscribe(console.log);
+
+const subject1 = new BehaviorSubject(1);
+
+subject1.subscribe(console.log());
+
+subject1.next(2);
+
+subject1.subscribe(console.log());
