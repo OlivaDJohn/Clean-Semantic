@@ -1,6 +1,8 @@
-import { Observable, pipe, of, fromEvent } from "rxjs";
+import { Observable, pipe, of } from "rxjs";
 //import { fromEvent } from "rxjs";
-import {map, filter, tap} from "rxjs/operators"
+import {map, filter} from "rxjs/operators";
+import { timer } from "rxjs";
+import {tap, mapTo, share} from "rxjs/operators";
 
 /*import {interval, timer} from "rxjs";
 
@@ -48,7 +50,7 @@ const cuadrado = alCuadrado(nums);
 
 cuadrado.subscribe(x => console.log(x));
 
-const clicks = fromEvent(document, 'click');
+/*const clicks = fromEvent(document, 'click');
 
 const positions = clicks.pipe(
     tap(ev => console.log('Procesado: ' + ev),
@@ -56,4 +58,21 @@ const positions = clicks.pipe(
     () => console.log('Completado')
 );
 
-positions.subscribe(pos => console.log(pos));
+positions.subscribe(pos => console.log(pos));*/
+
+const time = timer(1000);
+
+const obs = time.pipe(
+    tap(() => console.log('TAP ON')),
+    mapTo('END')
+);
+
+const subs01 = obs.subscribe(val => console.log(val));
+const subs02 = obs.subscribe(val => console.log(val));
+
+const shareObs = obs.pipe(share());
+
+console.log('SHARE ON');
+
+const subs03 = shareObs.subscribe(val => console.log(val));
+const subs04 = shareObs.subscribe(val => console.log(val));
