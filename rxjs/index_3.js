@@ -1,5 +1,5 @@
-import { of, Subject } from "rxjs";
-import {scan, delay} from "rxjs/operators";
+import { of, Subject, from, ConnectableObservable } from "rxjs";
+import {scan, delay, multicast} from "rxjs/operators";
 
 const src = of(1,2,3,4,5).pipe(delay(1000));
 const scanObs = src.pipe(
@@ -18,3 +18,17 @@ subject.subscribe({
 
 subject.next(1);
 subject.next(2);
+
+const source = from([1,2,3,4]);
+const multi = source.pipe(multicast(() => new Subject())) as ConnectableObservable;
+
+multi.subscribe({
+    next: x => console.log(`observerA: ${x}`)
+});
+
+
+multi.subscribe({
+    next: x => console.log(`observerB: ${x}`)
+});
+
+multi.connect()
