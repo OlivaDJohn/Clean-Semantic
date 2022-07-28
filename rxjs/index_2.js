@@ -1,4 +1,6 @@
-import { Observable } from "rxjs";
+import { Observable, interval } from "rxjs";
+import { bufferTime } from "rxjs/operators";
+
 
 const myObs = new Observable((Observer) => {
     Observer.next(1);
@@ -14,3 +16,11 @@ const subs = myObs.subscribe({
 });
 
 subs.unsubscribe();
+
+const timer = interval(500);
+
+const buffer = timer.pipe(bufferTime(2000, 1000));
+
+const subs1 = buffer.subscribe(val => {
+    console.log('buffer:',val);
+});
