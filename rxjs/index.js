@@ -1,5 +1,6 @@
 import { Observable } from "rxjs";
-import {interval, timer} from "rxjs";
+import { fromEvent } from "rxjs";
+/*import {interval, timer} from "rxjs";
 
 const obs = new Observable((Observer) => {
     Observer.next(1);
@@ -11,7 +12,7 @@ const obs = new Observable((Observer) => {
     }, 1000 );
 })
 
-const contador = new timer(1000);
+//const contador = new timer(1000);
 
 console.log('Just before subscribe');
 obs.subscribe({
@@ -24,4 +25,12 @@ console.log('Just after susbcribe');
 contador.subscribe((n) => {
     //console.log(`Cada ${n} segundos`);
     console.log(`TRIGGERED`);
-})
+})*/
+
+const el = document.getElementById('elemento');
+
+const mouseMove = fromEvent(el, 'mousemove');
+
+mouseMove.subscribe((e) => {
+    console.log(`Coordenadas: X=${e.clientX}, Y=${e.clientY}`);
+});
