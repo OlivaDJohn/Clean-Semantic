@@ -1,5 +1,5 @@
 import { Observable, interval, fromEvent, forkJoin, of, from } from "rxjs";
-import { bufferTime, switchMap, delay, take } from "rxjs/operators";
+import { bufferTime, switchMap, delay, take,concatMap } from "rxjs/operators";
 
 
 const myObs = new Observable((Observer) => {
@@ -27,10 +27,18 @@ const subs1 = buffer.subscribe(val => {
 
 //fromEvent(document, 'click').pipe(switchMap(() => interval(1000))).subscribe(console.log);
 
-const fork = forkJoin(
+/*const fork = forkJoin(
     of('Hola'),
     of('Mundo').pipe(delay(500)),
     interval(1000).pipe(take(2))
+);*/
+
+//fork.subscribe(val => console.log(val));
+
+const source = of(2000, 1000, 3000);
+
+const obsConcatMap = source.pipe(
+    concatMap(v => of(`Valor: ${v}`)).pipe(delay(v))
 );
 
-fork.subscribe(val => console.log(val));
+obsConcatMap.subscribe(v = console.log(v));
