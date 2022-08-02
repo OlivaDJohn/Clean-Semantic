@@ -33,7 +33,7 @@ const person = {
 
 //person.role = [0, 'admin', 'user']
 
-let favoriteActivities: string[];
+let favoriteActivities: any[];//AVOID AT ALL COS
 favoriteActivities = ['Sports'];
 
 console.log(person.name);
