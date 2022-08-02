@@ -8,3 +8,10 @@ function printResult(num: number) /*: undefined*/{
 }
 
 printResult(add(5, 12));
+
+let combineValues: (a:number, b:number) => number;
+combineValues = add;
+//combineValues = printResult;
+//combineValues = 5;
+
+printResult(combineValues(8, 8));
