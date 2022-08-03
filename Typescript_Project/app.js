@@ -1,7 +1,14 @@
-function add(n1, n2) {
-    return n1 + n2;
+"use strict";
+let userInput;
+let userName;
+userInput = 5;
+userInput = 'Max';
+if (typeof userInput === 'string') {
+    userName = userInput;
 }
-function printResult(num) {
-    console.log('Result: ' + num);
+function generateError(message, code) {
+    throw { message: message, errorCode: code };
 }
-printResult(add(5, 12));
+const results = generateError('An error ocurred', 500);
+console.log(results);
+console.log('searching for data...');

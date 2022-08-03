@@ -12,5 +12,7 @@ function generateError(message: string, code: number): never{
     throw {message: message, errorCode: code};
 }
 
-const result = generateError('An error ocurred', 500);
-console.log(result);
+const results = generateError('An error ocurred', 500);
+console.log(results);
+
+console.log('searching for data...');
